@@ -2,5 +2,5 @@
 
 set -euo pipefail
 
-docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
+echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin
 docker build -t tsukiy0/dotnet-multisdk:latest ./src/dotnet-multisdk
