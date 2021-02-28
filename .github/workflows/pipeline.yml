@@ -11,4 +11,10 @@ jobs:
       - name: test
         run: |
           docker --version
+      - name: build
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        run: |
+          ./tasks/ci/build.sh
           
