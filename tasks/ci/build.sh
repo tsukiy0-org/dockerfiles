@@ -11,6 +11,6 @@ build_and_push() {
 }
 
 build_and_push dotnet-multisdk
-build_and_push node-docker
+build_and_push ci-node
 build_and_push ci-dotnet
 build_and_push ci-py
