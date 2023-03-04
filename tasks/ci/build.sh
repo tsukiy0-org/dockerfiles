@@ -10,8 +10,8 @@ build_and_push() {
     docker push ${REPO}:latest
 }
 
-build_and_push dotnet-multisdk
+# build_and_push dotnet-multisdk
 build_and_push ci-node
-build_and_push ci-dotnet
-build_and_push ci-py
-build_and_push ci-golang
+# build_and_push ci-dotnet
+# build_and_push ci-py
+# build_and_push ci-golang
